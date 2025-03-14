@@ -5,7 +5,7 @@ SRC_URI = "file://input_app.c"
 S = "${WORKDIR}"
 
 do_compile() {
-    ${CC} ${CFLAGS} input_app.c -o input-app
+    ${CC} ${CFLAGS} input_app.c -o input-app ${LDFLAGS}
 }
 
 do_install() {
